@@ -1,49 +1,103 @@
-body{
+html,body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(19, 16, 16);
+    background: rgb(31, 29, 29);
     color: #ffffff;
-    margin: 0px;
-    line-height: 25px;
-    text-align: center;
-}
-#title,#position {
-    text-shadow: -5px -5px 4px rgb(8, 8, 8);
-}
-#profile-img{
-    height: 100px;
-    border-radius: 50%;
-}
-#contacts{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-@media screen and (max-width: 600px) {
-    #profile-img {
-      display: none;
-    }
-}
-.desc{
-    color:#bb9f9f
-}
-#header{
-    display:flex;
-    height: fit-content;
-    padding: 30px;
     margin: 10px;
+    line-height: 1em;
+    text-align: center;
+    height:100%;
 }
 
-#projects {
-    background: linear-gradient(rgb(83, 22, 22),black);
+* {
+    box-sizing: border-box;
+  }
+  
+
+/* text styling */ 
+.bold {
+    font-weight: bold;
+}
+.desc{
+    color:#bb9f9f;
+    text-decoration: none;
+}
+.section-title{
+    text-align: left;
+    font-size: larger;
+    margin-left: 20px;
+}
+
+a{
+    color: #ffffff;
+    text-align: top;
+}
+
+.logo{
+    width: 36px;
+    height:36px;
+}
+
+
+/* Header section CSS Properties */
+
+.profile-img{
+    height: 150px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 3px 3px 5px rgb(104, 91, 91);
+}
+
+#position {
+    background-color: rgb(253, 35, 35);
+    padding: 0.35em;
+    color: rgb(37, 34, 34);
+}
+
+
+.summary{
+    padding: 10px;
+}
+section.intro{
     display: flex;
-    justify-items: auto;
+    justify-content: center;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+/* Project section CSS properties */
+
+.cotainer {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;    
 }
 .card {
-    width: 400px;
-    height: min-content;
-    overflow: hidden;
-    /* border-block-color: black; */
-    /* margin: 15px; */
+    display: block;
+    background-color: rgb(41, 38, 38);
+    margin: 1rem .25em;
     padding: 15px;
-    border: 2px solid white;
+    min-width: 300px;
 }
+/* About me section details */
+#article-about-me{
+    display:flex;
+    flex:1;
+}
+/* footer section with socials */
+.social-list{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: end;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+

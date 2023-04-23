@@ -1,6 +1,4 @@
 const projects = document.getElementById("projects");
-// const count = document.getElementById('result-count');
-// const usersList = document.getElementById('users-list');
 let userListItem = [];
 
 
@@ -11,22 +9,29 @@ window.onload = function() {
         })
         .then((repos) => {
             
-            console.log(repos.length);
+            console.log("Repositories found : "+repos.length);
 
             // count.textContent = "No. of Users found : " + userListItem.length;
             let repos_items = ""
             for (let repo of repos) {
-                repos_items+=
-                `
-                <div class="card">
-                    <div class="container">
-                    <h4 class="repo-name"><b>${repo.name}</b></h4>
-                    <p class="repo-desc">${repo.description}</p> 
+    
+                if(!!repo.homepage){               
+                    repos_items+=`<article class="card">                
+                    <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
+                    <p class="repo-desc desc">${repo.description}</p> 
                     <a href="${repo.html_url}" target="_blank" >Repository Link<a>
                     <a href="${repo.homepage}" target="_blank" >Website link<a>     
-                    </div>
-                </div> 
-                `   
+                    </article> 
+                    ` 
+                }
+                else {
+                    repos_items+=`<article class="card">                
+                    <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
+                    <p class="repo-desc desc">${repo.description}</p> 
+                    <a href="${repo.html_url}" target="_blank" >Repository Link<a>    
+                    </article> 
+                    ` 
+                }
                    
             }
             projects.innerHTML = repos_items;

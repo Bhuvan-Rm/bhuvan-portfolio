@@ -11,30 +11,86 @@
 
 <body>
     <script src="index.js" defer></script>
-    <div id="header">
-    <div id="summary">
-        <img id="profile-img" src="Bhuvan.jpg" alt="Bhuvan's profile picture">
-        <h1 id="title">Bhuvaneshwaran M</h1>
-        <h2 id="position">Software Quality Engineer at Dassault Systèmes'</h2>
-        <p class="desc">Accomplished QA tester with 4+ years of experience. Skilled in manual and automated testing and
-            creating test plans</p>
-    </div>
-    <div id="contacts">
-        <img src="icons8-github-48.svg" alt="github">
-        <a href="https://github.com/Bhuvan-Rm" target="_blank" rel="noopener noreferrer">Github</a>
-        <img src="icons8-twitter.svg" alt="LinkedIn">
-        <a href="https://www.linkedin.com/in/bhuvaneshrm/" target="_blank" rel="noopener noreferrer">LinkedIn</a>    
-    </div>
-</div>
-<div class="card">
-    Projects
-</div>
-<div id="projects">
-    <div class="card">
-        <h3 class="repo-name">Repository Name</h3>
-        <p class="repo-desc">Repo description</p>
-    </div>
-</div>
+    <!-- <header>
+        <div class="logo">
+            <img src="Bhuvan.jpg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#social" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#project" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <img src="Bhuvan.jpg" alt="a picture of Bhuvan" class="profile-img">
+        <div class="summary">
+            <h1 class="name">
+                Bhuvaneshwaran
+            </h1>
+            <h3 id="position">Software Engineer at Dassault Systemes</h3>
+            <!-- <p class="desc">Accomplished Software tester with 4+ years of experience. Skilled in manual and automated testing
+                and
+                creating test plans</p> -->
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        
+        <h2 class="section-title">Who I am</h2>
+        <p class="desc"></p>
+        <article id="article-about-me">
+        <div class="about-me__body">
+            <p class="desc">
+            Create builds for testing and troubleshooting where necessary<br>
+            Create and execute test plans for development features<br>
+            Working with the development team to get bugs fixed<br>
+            Report on bugs including communicating across multiple departments on issues and their status<br>
+            Create and execute test plans<br>
+            Reporting on testing and QA activities to the leadership in weekly production meetings<br>
+            Work with the Product manager to analyse and disseminate feedback<br>
+            Planning QA phases for release on various platforms<br>
+            Provide critique and feedback on usability and design<br>
+            </p>
+        </div>
+
+        <img src="img/Bhuvan-02.jpg" alt="Bhuvan leaning against a wall" class="profile-img">
+        </article>
+    </section>
+
+    <section id="project" class="container">
+        <h3 class="section-title">Works</h3>
+        <article id="projects">
+            <article class="card">
+                <h3 class="repo-name">Repository Name</h3>
+                <p class="repo-desc">Repo description</p>
+            </article>
+        </article>
+    </section>
+
+    <footer id="social">
+        <h3 class="section-title">Social</h3>
+        <div class="social-list">
+            <div class="contact">
+                <img src="icons8-github-48.svg" alt="github" class="logo">
+                <a href="https://github.com/Bhuvan-Rm" target="_blank" rel="noopener noreferrer"  ">
+                    Github</a>
+            </div>
+            <div class="contact">
+                <img src="icons8-linkedin.svg" alt="LinkedIn" class="logo">
+                <a href="https://www.linkedin.com/in/bhuvaneshrm/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
