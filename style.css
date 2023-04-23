@@ -122,6 +122,10 @@ section.intro {
     min-width: 300px;
 }
 
+.link-with-icon{
+    padding: 5px;
+    margin: 5px;
+}
 /* About me section details */
 #article-about-me {
     display: flex;
