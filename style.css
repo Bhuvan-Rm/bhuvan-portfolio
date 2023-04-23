@@ -4,6 +4,7 @@ body{
     color: #ffffff;
     margin: 0px;
     line-height: 25px;
+    text-align: center;
 }
 #title,#position {
     text-shadow: -5px -5px 4px rgb(8, 8, 8);
@@ -34,10 +35,15 @@ body{
 
 #projects {
     background: linear-gradient(rgb(83, 22, 22),black);
+    display: flex;
+    justify-items: auto;
 }
 .card {
-    border-block-color: black;
-    margin: 15px;
+    width: 400px;
+    height: min-content;
+    overflow: hidden;
+    /* border-block-color: black; */
+    /* margin: 15px; */
     padding: 15px;
     border: 2px solid white;
 }
