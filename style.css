@@ -161,6 +161,7 @@ section.intro {
     width:50%;
     padding:1em;
     margin: 15px 0px 15px 0px;
+    background-color: rgb(41, 38, 38);
 }
 
  .right {
@@ -197,7 +198,7 @@ section.intro {
 }
 #social{
     border: 2px dotted white;
-    margin: 10px 10px 30px 10px ;
+   
 }
 
 .contact {
