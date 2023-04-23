@@ -135,7 +135,8 @@ section.intro {
     background-color: rgb(41, 38, 38);
     margin: 1rem .25em;
     padding: 15px;
-    min-width: 300px;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .link-with-icon{
