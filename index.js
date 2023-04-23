@@ -16,7 +16,7 @@ window.onload = function() {
             for (let repo of repos) {
     
                 if(!!repo.homepage){               
-                    repos_items+=`<article class="card">                
+                    repos_items+=`<article class="card zoom">                
                     <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
                     <p class="repo-desc desc">${repo.description}</p> 
                     <a href="${repo.html_url}" target="_blank" class="link-with-icon">Repository Link
@@ -28,7 +28,7 @@ window.onload = function() {
                     
                 }
                 else {
-                    repos_items+=`<article class="card">                
+                    repos_items+=`<article class="card zoom">                
                     <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
                     <p class="repo-desc desc">${repo.description}</p> 
                     <a href="${repo.html_url}" target="_blank" class="link-with-icon">Repository Link

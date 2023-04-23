@@ -134,7 +134,7 @@ section.intro {
 
 /* footer section with socials */
 .social-list {
-    padding: 1em;
+    padding: 50px;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -147,3 +147,15 @@ section.intro {
     align-items: center;
     justify-content: center;
 }
+
+/* Fancy additions */
+
+.zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
