@@ -1,8 +1,19 @@
+:root {
+    --desc-fontcolor: #bb9f9f;
+    --card-color: rgb(41, 38, 38);
+    --section-color: black;
+    --black: rgb(8, 8, 8);
+    --light: white;
+    --light-text: rgb(150, 253, 150);
+    --dark-text: #ffffff;
+}
+
+
 html,
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(31, 29, 29);
-    color: #ffffff;
+    background: var(--black);
+    color: var(--dark-text);
     line-height: 1em;
     text-align: center;
     height: 100%;
@@ -19,19 +30,20 @@ body {
 }
 
 .desc {
-    color: #bb9f9f;
+    color: var(--desc-fontcolor);
     text-decoration: none;
 }
 
 .section-title {
     text-align: left;
     margin-left: 20px;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-section,footer{
+section,
+footer {
     margin-top: 2em;
-    background:linear-gradient(black,darkred);
+    background: var(--);
     padding: 20px;
 }
 
@@ -50,11 +62,11 @@ a {
 
 /* Header section  */
 
-header{
-    position: fixed;
-    height: 100px;
+header {
+    position: relative;
     width: 100%;
 }
+
 .nav__list {
     list-style: none;
 }
@@ -74,7 +86,7 @@ header{
     overflow: hidden;
     margin: 0px;
     background-color: rgb(41, 38, 38);
-    
+
 }
 
 .nav__list {
@@ -82,6 +94,7 @@ header{
     padding: 0px;
 
 }
+
 button {
     background-color: rgb(41, 38, 38);
     color: white;
@@ -94,6 +107,7 @@ button {
 
 /* Intro section CSS Properties */
 
+
 .profile-img {
     height: 150px;
     /* offset-x | offset-y | blur-radius | color */
@@ -101,21 +115,31 @@ button {
 }
 
 #position {
-    background-color: darkred;
-    padding: 0.35em;
-    
+    padding: 0.5em;
+    text-shadow: 0px 0px 5px #000000;
 }
 
 
 .summary {
-    padding: 10px;
+    display: block;
+    background-color: darkred;
+    padding: 0.5em;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 5px 5px 5px #030303;
 }
 
 section.intro {
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-    flex-wrap: wrap;
+    background: url(img/Background-bhuvan.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.section-footer{
+    margin-top: 350px;
+    height: fit-content;
+    width: fit-content;
 }
 
 /* Project section CSS properties */
@@ -139,47 +163,50 @@ section.intro {
     min-width: 0;
 }
 
-.link-with-icon{
+.link-with-icon {
     padding: 5px;
     margin: 5px;
 }
+
 /* About me section details */
 #article-about-me {
     display: flex;
     justify-content: center;
 }
 
-#article-timeline{
-    display:flex;
+#article-timeline {
+    display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: flex-end;
 
 }
-.timeline-card{
+
+.timeline-card {
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 3px 3px 5px rgb(104, 91, 91);
-    width:50%;
-    padding:1em;
+    width: 50%;
+    padding: 1em;
     margin: 15px 0px 15px 0px;
     background-color: rgb(41, 38, 38);
 }
 
- .right {
-      margin-right: auto;
-  }
+.right {
+    margin-right: auto;
+}
 
 
 /* Skill section details */
-#article-skills{
+#article-skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 4px;
     overflow: hidden;
 }
-.skill-card{
+
+.skill-card {
     display: flex;
     background-color: rgb(41, 38, 38);
     margin: 0.5rem .25em;
@@ -197,9 +224,10 @@ section.intro {
     justify-content: center;
     align-content: end;
 }
-#social{
+
+#social {
     border: 2px dotted white;
-   
+
 }
 
 .contact {
@@ -213,10 +241,12 @@ section.intro {
 
 .zoom {
     transition: transform .2s;
-  }
-  
-  .zoom:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-  }
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
