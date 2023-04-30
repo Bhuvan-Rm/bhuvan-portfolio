@@ -64,6 +64,8 @@ a {
 
 header {
     position: sticky;
+    top:0;
+    position: -webkit-sticky; /* Safari */
     width: 100%;
 }
 
