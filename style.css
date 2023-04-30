@@ -63,7 +63,7 @@ a {
 /* Header section  */
 
 header {
-    position: relative;
+    position: sticky;
     width: 100%;
 }
 
