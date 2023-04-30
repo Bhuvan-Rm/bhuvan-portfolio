@@ -17,6 +17,7 @@ body {
     line-height: 1em;
     text-align: center;
     height: 100%;
+    margin: 0px;
 }
 
 * {
@@ -63,10 +64,12 @@ a {
 /* Header section  */
 
 header {
-    position: sticky;
+    position: fixed;
     top:0;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-fixed; /* Safari */
     width: 100%;
+    z-index: 300;
+    box-shadow: 0px 0px 5px rgb(197, 192, 192);
 }
 
 .nav__list {
@@ -85,10 +88,8 @@ header {
 .nav {
     padding: 0 18px;
     display: none;
-    overflow: hidden;
     margin: 0px;
     background-color: rgb(41, 38, 38);
-
 }
 
 .nav__list {
