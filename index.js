@@ -19,19 +19,18 @@ window.onload = function() {
                     repos_items+=`<article class="card zoom">                
                     <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
                     <p class="repo-desc desc">${repo.description}</p> 
-                    <a href="${repo.html_url}" target="_blank" class="link-with-icon">Repository Link
+                    <a href="${repo.html_url}" target="_blank" class="link-with-icon">Go to repository
                     <img src="img/icons8-link-48.png" alt="link" style="width:12px;height:12px;" class="link-icon"></a>
-                    <a href="${repo.homepage}" target="_blank" class="link-with-icon">Website link
+                    <a href="${repo.homepage}" target="_blank" class="link-with-icon">Visit Live Site
                     <img src="img/icons8-link-48.png" alt="link" style="width:12px;height:12px;" class="link-icon"></a>     
                     </article> 
-                    ` 
-                    
+                    `    
                 }
                 else {
                     repos_items+=`<article class="card zoom">                
                     <h4 class="repo-name title bold"><b>${repo.name}</b></h4>
                     <p class="repo-desc desc">${repo.description}</p> 
-                    <a href="${repo.html_url}" target="_blank" class="link-with-icon">Repository Link
+                    <a href="${repo.html_url}" target="_blank" class="link-with-icon">Go to repository
                     <img src="img/icons8-link-48.png" alt="link" style="width:12px;height:12px;" class="link-icon"></a>  
                     </article> 
                     ` 
