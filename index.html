@@ -12,12 +12,7 @@
 <body>
     <script src="index.js" defer></script>
     <header>
-        <!-- <div class="logo">
-            <img src="img/Bhuvan.jpg" alt="" class="logo">
-        </div> -->
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"> Menu</span>
-        </button>
+        <div id="brand"><a href="/" class="logo">Bhuvan</a></div>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -26,47 +21,52 @@
                 <li class="nav__item"><a href="#social" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        <div id="hamburger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#social" class="nav__link">Contact</a></li>
+            </ul>
+          </div>
+          
     </header>
 
     <div class="main">
+
     <!-- Introduction -->
-    <section class="intro" id="home">
-        <!-- <img src="img/Bhuvan.jpg" alt="a picture of Bhuvan" class="profile-img"> -->
-        <div class="summary">
-            <h1 class="name">
-                Bhuvaneshwaran
+    <section class="home" id="home">      
+        <div class="home-content">
+            <h1 class="name text-animate">Hi , I'm 
+               <span>Bhuvaneshwaran</span> 
             </h1>
-            <h3 id="position">Software Engineer at Dassault Systemes</h3>
-            <p class="desc">Skilled Testing Professional Transitioning to Web Development: Bringing a Unique Blend of Expertise and Experience</p>
-            
+            <h3 id="position" class="text-animate">Software Tester | Web Developer</h3>
+            <p class="desc text-animate">I am a skilled testing professional who is transitioning to web development, 
+                bringing with me a unique combination of expertise and experience.</p> 
         </div>
-        <div class="section-footer">
-        <button class="nav-button">
-            <a href="#about">Know more</a>
-        </button>
+        <div class="btn-box">
+            <a href="#" class="btn">Learn more</a>
         </div>
     </section>
 
     <!-- About me -->
     <section class="about-me" id="about">
-
         <h3 class="section-title bold">Who I am</h3>
-        <p class="desc"></p>
+        <hr class="solid">
         <article id="article-about-me">
             <div class="about-me__body">
+                <h4 class="sub-title">From Testing to Web Dev: My Journey</h4>
+                <hr class="sub-solid">
                 <p class="desc">
-                    I have experience of 4 and half years working as a software tester.
-                    My area of expertise includes testing web and native 3D application.
-                    Recently I am testing native 3D application.
-                    In the past I have worked on web applications ecommerce.
-                    I use automation tools such as Selenium for testing repetitive test areas of my application and
-                    JavaScript for test data and scenario building.
-                    I have also used Quality center tool for test management and defect reporting.
-                    I create simple websites using html,css and JavaScript
-                    I have completed my ISTQB Foundation Level certification.
+                    Hey there! I’m a testing pro who’s making the switch to web development. I’ve got a pretty sweet combo of skills and experience up my sleeve that 
+                    I’m excited to bring to the table. 
+                    I’m all about learning new things and pushing myself to grow, so this transition is right up my alley. 
+                    Can’t wait to see where this journey takes me!
                 </p>
             </div>
-            <!-- <img src="img/Bhuvan-02.jpg" alt="Bhuvan leaning against a wall" class="profile-img"> -->
         </article>
 
         <div id="article-timeline">
@@ -88,6 +88,7 @@
     <!-- Work -->
     <section id="project" class="container">
         <h3 class="section-title bold">Projects</h3>
+        <hr class="solid">
         <article id="projects">
             <article class="skill-card zoom">
                 <h4 class="repo-name">Repository Name</h4>
@@ -99,6 +100,7 @@
     <!-- Skills -->
     <section id="skills" class="container">
         <h3 class="section-title bold">Skills</h3>
+        <hr class="solid">
         <article id="article-skills">
             <article class="skill-card zoom">
                 <h4 class="skill-name">Javascript</h4>
@@ -129,6 +131,7 @@
     <!-- Social -->
     <footer id="social">
         <h3 class="section-title bold">Social</h3>
+        <hr class="solid">
         <div class="social-list">
             <div class="contact">
                 <img src="img/icons8-github-48.svg" alt="github" class="logo">

@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
-    --desc-fontcolor: #bb9f9f;
     --card-color: rgb(41, 38, 38);
     --section-color: black;
-    --black: rgb(8, 8, 8);
+    --bgColor: rgb(228, 58, 58);
+    --second-bgColor: rgb(206, 12, 12);
+    --text-color: white;
+    --text-desc-color:#dddddd;
+    --themeColor: black;
     --light: white;
     --light-text: rgb(150, 253, 150);
     --dark-text: #ffffff;
@@ -11,17 +16,30 @@
 
 html,
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--black);
+    font-family: 'Poppins', sans-serif;
+    background: var(--bgColor);
     color: var(--dark-text);
-    line-height: 1em;
+    line-height: 1.5em;
     text-align: center;
     height: 100%;
     margin: 0px;
 }
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1 rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 
@@ -31,80 +49,154 @@ body {
 }
 
 .desc {
-    color: var(--desc-fontcolor);
+    color: var(--text-desc-color);
     text-decoration: none;
 }
 
-.section-title {
-    text-align: left;
-    margin-left: 20px;
-    text-decoration: underline;
-}
+
 
 section,
 footer {
-    margin-top: 2em;
-    padding: 20px;
+    margin-top: 2rem;
+    padding: 4rem 9% 2rem;
+    min-height: 100vh;
 }
 
 a {
-    color: #ffffff;
-    text-align: top;
-    text-decoration: none;
-}
+    color: var(--text-color);
 
-.logo {
-    width: 36px;
-    height: 36px;
 }
-
 
 
 /* Header section  */
 
 header {
     position: fixed;
-    top:0;
-    position: -webkit-fixed; /* Safari */
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    height: 50px;
+    position: -webkit-fixed;
+    /* Safari */
     width: 100%;
-    z-index: 300;
     box-shadow: 0px 0px 5px rgb(197, 192, 192);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgColor);
+    z-index: 300;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand a {
+    color: #ffffff;
 }
 
 .nav__list {
     list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.nav__item:hover {
-    list-style: none;
-    background-color: #030303;
+.nav__link {
+    color: white;
 }
 
 .nav__item {
-    padding: 8px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
-.nav {
-    padding: 0 18px;
+.nav__item:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
     display: none;
-    margin: 0px;
-    background-color: rgb(41, 38, 38);
-}
-
-.nav__list {
-    margin: 0px;
-    padding: 0px;
-
-}
-
-button {
-    background-color: rgb(41, 38, 38);
-    color: white;
     cursor: pointer;
-    padding: 10px;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
     width: 100%;
-    border: none;
-    outline: none;
+    list-style: none;
+    background-color: var(--bgColor);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+hr.solid {
+    border-top: 3px solid var(--text-color);
+    border-radius: 10px;
+    width: 40%;
+    margin:2rem auto 2rem auto;
+}
+
+hr.sub-solid {
+    border-top: 1px solid var(--text-color);
+    border-radius: 10px;
+    width: 20%;
+    text-align: left;
+    margin:0.5rem;
+}
+
+.sub-title{
+    text-align: left;
 }
 
 /* Intro section CSS Properties */
@@ -116,29 +208,46 @@ button {
     box-shadow: 3px 3px 5px rgb(104, 91, 91);
 }
 
-#position {
-    padding: 0.5em;
-    text-shadow: 0px 0px 5px #000000;
+.home-content {
+    max-width: 60rem;
+    text-align: center;
 }
 
-
-.summary {
-    display: block;
-    background-color: darkred;
-    padding: 0.75em;
-    height: fit-content;
-    width: fit-content;
-    box-shadow: 5px 5px 5px #030303;
+.home-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content #position{
+    padding: 1rem;
 }
 
-section.intro {
-    background: url(img/Background-bhuvan.jpg) no-repeat center;
-    background-size: cover;
-    height: 600px;
+.btn-box {
+    background-color: rgb(88, 70, 70);
+    padding:0.5rem;
+    margin-top: 5rem;
+    width: max-content;
+    display: inline-block;
+}
+
+.home-content .text-animate {
     position: relative;
 }
 
-.section-footer{
+.text-animate {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+.section-footer {
     margin-top: 350px;
     height: fit-content;
     width: fit-content;
@@ -159,7 +268,7 @@ section.intro {
     display: flex;
     flex-direction: column;
     background-color: rgb(41, 38, 38);
-    margin: 1rem .25em;
+    margin: 1em .25em;
     padding: 15px;
     flex: 1 1 0;
     min-width: 0;
@@ -227,10 +336,6 @@ section.intro {
     align-content: end;
 }
 
-#social {
-    border: 2px dotted white;
-
-}
 
 .contact {
     display: flex;

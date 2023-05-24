@@ -1,4 +1,15 @@
 const projects = document.getElementById("projects");
+const hamburgerMenu = document.getElementById('hamburger-icon')
+
+hamburgerMenu.addEventListener('click',()=>{
+  hamburgerMenu.classList.toggle('open');
+})
+
+// if ( window.innerWidth < 700 ) {
+//   document.querySelector("div").classList.add('three');
+//   document.querySelector("div").classList.remove('ten');
+// }
+
 let userListItem = [];
 
 
