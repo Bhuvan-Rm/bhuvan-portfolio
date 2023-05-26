@@ -210,6 +210,7 @@ width: 100vw;
 }
 
 .btn-box {
+ 
     background-color: rgb(88, 70, 70);
     padding: 0.5rem;
     margin-top: 5rem;
@@ -318,6 +319,18 @@ width: 100vw;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.contact-form p{
+    margin: 0.5rem;
+}
+.contact-form p button[type="submit"]{
+    all:unset;
+     color: var(--text-color);     
+    background-color: rgb(88, 70, 70);
+    padding: 0.5rem;
+    width: max-content;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 600px) {
