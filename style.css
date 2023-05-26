@@ -47,7 +47,7 @@ html, body {
 
 section, footer {
     margin-top: 1.5rem;
-    padding: 4rem 9% 2rem;
+    padding: 4rem 5% 1rem;
     min-height: 100vh;
 }
 
@@ -154,15 +154,7 @@ header {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    header nav {
-        display: none;
-    }
 
-    #hamburger-icon {
-        display: block;
-    }
-}
 
 hr.solid {
     border-top: 3px solid var(--text-color);
@@ -205,6 +197,9 @@ section.home {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.3;   
+}
+.home-content h1 >span{
+width: 100vw;   
 }
 .home-content .desc {
     max-width: 70%;
@@ -324,6 +319,24 @@ section.home {
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    .social-list {
+        display: block;
+    }
+    .social-list .contact{
+        margin: 1rem;
+    }
+}
+
+/* ON HOVER ZOOM */
 
 .zoom {
     transition: transform 0.2s;
