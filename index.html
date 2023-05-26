@@ -59,8 +59,7 @@
             <hr class="solid">
             <article id="article-about-me">
                 <div class="about-me__body">
-                    <h4 class="sub-title">From Testing to Web Dev: My Journey</h4>
-                    <hr class="sub-solid">
+
                     <p class="desc">
                         Hey there! I'm a testing pro who's making the switch to web development. I've got a pretty sweet
                         combo of skills and experience up my sleeve that
@@ -137,44 +136,38 @@
             <hr class="solid">
             <div class="social-list">
                 <div class="contact">
-                    <img src="img/icons8-github-48.svg" alt="github" class="social-logo">
+
                     <a href="https://github.com/Bhuvan-Rm" target="_blank" rel="noopener noreferrer" ">
-                    Github</a>
-            </div>
-            <div class=" contact">
-                        <img src="img/icons8-linkedin.svg" alt="LinkedIn" class="social-logo">
-                        <a href="https://www.linkedin.com/in/bhuvaneshrm/" target="_blank" rel="noopener noreferrer">
-                            LinkedIn</a>
+                        <img src=" img/icons8-github-48.svg" alt="github" class="social-logo"></a>
                 </div>
                 <div class=" contact">
-                    <img src="https://img.icons8.com/fluency/48/null/new-post.png" alt="Email" class="social-logo">
+                    <a href="https://www.linkedin.com/in/bhuvaneshrm/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons8-linkedin.svg" alt="LinkedIn" class="social-logo"></a>
+                </div>
+                <div class=" contact">
+                    
                     <a href="https://mail.google.com/a/?view=cm&fs=1&to=bhuvaneshrm@gmail.com" target="_blank"
                         rel="noopener noreferrer">
-                        Send Email</a>
-                </div>
-                <div class="contact-form">
-                    <!-- form fields -->
-                    <form name="contact" method="POST" data-netlify="true">
-                        <input type="hidden" name="subject" 
-                        value="New lead from %{formName} (%{submissionId})" />
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Message: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button type="submit">Send</button>
-                        </p>
-                      </form>
-                                         
+                        <img src="https://img.icons8.com/fluency/48/null/new-post.png" alt="Email" class="social-logo"></a>
                 </div>
             </div>
-    </div>
-    </footer>
+            <div class="social-container">
+                <h4 class="sub-title"> Contact me</h4>
+                <hr class="sub-solid">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="subject" value="New lead from %{formName} (%{submissionId})" />
+                    <label for="mailer-name">Your Name</label>
+                    <input type="text" id="mailer-name" name="mailer-name" placeholder="Your name..">
+
+                    <label for="mailer-id">Your Email</label>
+                    <input type="email" id="mailer-id" name="mailer-id" placeholder="Your Email..">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Your Message..."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
     </div>
 </body>
 

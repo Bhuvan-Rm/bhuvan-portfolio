@@ -33,8 +33,8 @@ html, body {
 }
 
 .social-logo {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
 }
 
 .bold {
@@ -184,7 +184,7 @@ hr.sub-solid {
 }
 
 section.home {
-    background-image: url(./img/Kakashi-minimalist.png);
+    background-image: url('./img/Kakashi-minimalist.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -210,10 +210,9 @@ width: 100vw;
 }
 
 .btn-box {
- 
+
     background-color: rgb(88, 70, 70);
     padding: 0.5rem;
-    margin-top: 5rem;
     width: max-content;
     display: inline-block;
 }
@@ -307,7 +306,7 @@ width: 100vw;
 }
 
 .social-list {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex: 1;
     justify-content: space-evenly;
@@ -321,17 +320,38 @@ width: 100vw;
     justify-content: center;
 }
 
-.contact-form p{
-    margin: 0.5rem;
-}
-.contact-form p button[type="submit"]{
-    all:unset;
-     color: var(--text-color);     
-    background-color: rgb(88, 70, 70);
-    padding: 0.5rem;
-    width: max-content;
-    display: inline-block;
-}
+.social-container input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .social-container input[type=submit] {
+    background-color: #04AA6D;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .social-container {
+    display: block;
+    border-radius: 5px;
+    background-color: #c72020;
+    padding: 20px;
+    height: auto;
+  }
 
 @media only screen and (max-width: 600px) {
     header nav {
@@ -341,11 +361,12 @@ width: 100vw;
     #hamburger-icon {
         display: block;
     }
-    .social-list {
-        display: block;
-    }
     .social-list .contact{
         margin: 1rem;
+    }
+    .social-container {
+        height: 75vh; /* Set the container height to 100% of the viewport height */
+        overflow-y: scroll; /* Enable vertical scrolling if the content exceeds the container height */
     }
 }
 
