@@ -288,6 +288,13 @@ width: 100vw;
     margin-right: auto;
 }
 
+.exp--list{
+    list-style: inside;
+    text-align: left;
+}
+
+
+
 #article-skills {
     display: flex;
     justify-content: center;
