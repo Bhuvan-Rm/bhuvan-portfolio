@@ -154,6 +154,10 @@ header {
     margin-bottom: 10px;
 }
 
+.nav__link.active {
+    border-bottom: 1px solid var(--text-color);
+  }
+
 
 
 hr.solid {
