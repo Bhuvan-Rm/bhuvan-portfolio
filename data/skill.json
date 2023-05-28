@@ -1,0 +1,54 @@
+{
+    "skills": [
+        {
+            "category": "Software Testing",
+            "skills": [
+                "Manual Testing",
+                "Automation Testing",
+                "Test Planning",
+                "Test Execution",
+                "Defect Tracking"
+            ]
+        },
+        {
+            "category": "Automation Tools",
+            "skills": [
+                "Selenium WebDriver",
+                "UFT (Unified Functional Testing)"
+            ]
+        },
+        {
+            "category": "Programming Languages",
+            "skills": [
+                "Java",
+                "JavaScript"
+            ]
+        },
+        {
+            "category": "Web Development",
+            "skills": [
+                "HTML",
+                "CSS",
+                "React"
+            ]
+        },
+        {
+            "category": "Version Control",
+            "skills": [
+                "Git"
+            ]
+        },
+        {
+            "category": "Test Management Tools",
+            "skills": [
+                "Jira"
+            ]
+        },
+        {
+            "category": "Defect Tracking Tools",
+            "skills": [
+                "Jira"
+            ]
+        }
+    ]
+}
